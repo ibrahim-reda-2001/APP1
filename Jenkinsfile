@@ -42,7 +42,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    sed -i 's|image: .*|image: ${DOCKER_IMAGE}:${BUILD_NUMBER}|' deploy.yml
+                    sed -i 's|image: .*|image: ibrahimelmsery1/${DOCKER_IMAGE}:${BUILD_NUMBER}|' deploy.yml
                     cat deploy.yml  # Debugging: Show the updated file
                     """
                 }
