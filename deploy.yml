@@ -28,8 +28,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-  app: app1
+    app: app1
   ports:
-  - port: 80
-    targetPort: 80
-    nodePort: 30002
+    - port: 80
+      targetPort: 80
+      nodePort: 30002
